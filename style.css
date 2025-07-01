@@ -1,0 +1,416 @@
+body{
+    background-image: url(about-bg.png);
+    background-position: contain;
+}
+/* Header */
+.logo{
+    text-decoration: none;
+    color: #7C50EC;
+}
+.nav-link{
+    font-weight:700;
+    font-style: "Rubik", sans-serif;
+}
+.nav-link:hover{
+    color: #7C50EC;
+}
+.active{
+    color: #7C50EC !important;
+}
+
+/* Header End/ */
+/* Hero-Section */
+.bg-img{
+    background-image: url('bg-logo.png'); 
+    background-size: contain;
+    background-position: left ;
+    background-repeat: no-repeat;
+
+}
+.hero-heading{
+    font-size: 40px;
+    margin-bottom: 20px;
+    position: relative;
+    text-transform: uppercase;
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    color: #000000;
+}
+.hero-heading::after{
+    content: '';
+    width: 410px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 23%;
+    background: #000000;
+}
+.name{
+    font-size: 50px;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    color: #000000;
+}
+.skill{
+    font-size: 24px;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    color: #000000;
+}
+.hire-btn{
+    color: white;
+    background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 46px;
+    border-radius:5px ;
+    text-decoration: none;
+    box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3);
+    border: 2px solid transparent;
+}
+.hire-btn:hover{
+    background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #4458dc, #854fee);
+    border: 2px solid #854fee;
+    color: #222222;
+    transition: all 0.4s ease-in;
+}
+.cv-btn{
+    background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #4458dc, #854fee);
+    border: 2px solid #854fee;
+    color: #222222;
+    text-decoration: none;
+    border-radius:5px;
+    margin-left: 20px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 46px;
+}
+.cv-btn:hover{
+    color: white;
+    background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+    transition: all 0.4s ease-out;
+}
+
+@media (max-width: 767.98px) {
+    .hero-heading{
+        font-size: 30px;
+    }
+    .hero-heading::after{
+         width: 300px;
+    }
+    .right-img{
+        display: none;
+    }
+    .about-us-img{
+        display: none;
+    }
+    .main-title h1{
+        width:auto;
+    }
+    .get-btn{
+        margin-top: 10px;
+    }
+}
+
+/* Hero End */
+/* About */
+
+.about-section{
+    padding: 200px  0px;
+}
+.main-title h1{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+.main-title p{
+    margin-bottom: 20px;
+    line-height: 26px;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: rgb(119, 119, 119);
+}
+.down-cv{
+    color: white;
+    background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 46px;
+    border-radius:5px ;
+    text-decoration: none;
+    box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3);
+    border: 2px solid transparent;
+    text-transform: uppercase; 
+}
+.down-cv:hover{
+    background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #4458dc, #854fee);
+    border: 2px solid #854fee;
+    color: #222222;
+    transition: all 0.4s ease-in;
+}
+
+/* Brand Section */
+.brand-section{
+    padding-bottom:170px;
+}
+.single-brand-item {
+    width: 170px;
+    height: 100px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    border: 1px solid #eeeeee;
+    box-shadow: none;
+    transition: all 0.4s ease-in-out;
+}
+.single-brand-item img {
+    filter: none;
+    transition: filter 0.4s ease-in-out;
+}
+.single-brand-item:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-color: #dddddd; 
+}
+.single-brand-item:hover img {
+    filter: brightness(0%);
+}
+.client-info{
+    position: relative;
+    background-color: #FAF8FF;
+}
+.client-info::before{
+    background-image: url(client-info-bg.png);
+    background-repeat: no-repeat;
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: -50px;
+    height: 175px;
+    width: 175px;
+}
+.mb-50{
+    margin-top: 50px;
+}
+.large{
+    color: rgb(133, 79, 238);
+    font-family: "Rubik",;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 85px;
+    margin-left: 30px;
+}
+.small{
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-family: "Rubik", sans-serif;
+    font-size:18px;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: 600;
+    line-height: 26px;
+}
+.call-now{
+    margin-top: 50px;
+    margin-left: 10px;
+}
+.call{
+    font-size: 60px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+.call-us span{
+    color: rgb(133, 79, 238);
+    font-size: 16px;
+    margin-bottom: -5px;
+}
+.call-now h3{
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    margin-top: 5px;
+}
+/* Brand End */
+/* Services */
+
+.services-section{
+    padding-bottom: 170px;
+}
+.text-center{
+    margin-bottom: 100px;
+}
+.col-lg-12-para{
+
+    line-height: 26px;
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    color: rgb(119, 119, 119);
+}
+.col-lg-12-heading{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+.feature-item{
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 45px 25px;
+    background: rgb(249, 249, 253);
+    transition: all 0.7s ease 0s;
+}
+.feature-item:hover{
+    box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
+    background: #fff;
+}
+.feature-item img{
+    margin-bottom: 20px;
+}
+.feature-item h4{
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "Rubik",sans-serif;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+.feature-item p{
+    margin-bottom: 20px;
+    line-height: 26px;
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    color: rgb(119, 119, 119);
+}
+/* services end/ */
+/* testimonial start */
+
+.testimonial-area{
+    padding-bottom: 170px;
+}
+.bg-color{
+    background-color: #FBFBFF;
+    box-shadow: 0px 5px 5px rgba(197, 200, 245, 0.3);
+}
+.bg-color:hover{
+    box-shadow: 0px 15px 30px 0px rgba(221, 221, 221);
+    transition: all 0.4s ease 0s;
+}
+.testi-title h4{
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-family: "Rubik",;
+    font-weight: 700;
+    color: #000000;
+    line-height: 1.2;
+}
+.testi-title p{
+    line-height: 26px;
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #777777;
+}
+/* testimonial end/ */
+/* newsletter start */
+
+.newsletter-area{
+    padding-bottom: 90px;
+}
+.newletter-box{
+    background-image: url(newsletetr-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 150px 0px;
+    text-align: center;
+}
+.newletter-box input{
+    min-width: 380px;
+    max-width: 380px;
+    line-height: 48px;
+    padding: 0 25px;
+    border: 1px solid #ffffff;
+    background: transparent;
+    font-weight: 400;
+    border-radius: 5px;
+    color: white;
+}
+.get-btn{
+    margin-left: 10px;
+    background: #ffffff;
+    text-transform: uppercase;
+    color: #222222;
+    border-radius: 5px;
+    line-height: 48px;
+    font-size: 14px;
+    font-family: "Rubik", sans-serif;
+    padding: 0px 38px;
+    cursor: pointer;
+}
+.newletter-box h1{
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 30px;
+    font-family: "Rubik", sans-serif;
+    text-transform: uppercase;
+}
+.newletter-box p{
+    color: white;
+}
+.subs-form{
+    margin-top: 45px;
+}
+::placeholder{
+    color: white;
+    opacity: 1;
+}
+/* newsletter end */
+
+/* About Page */
+
+.banner-section{
+    position: relative;
+    min-height: 485px;
+    background: url(common-banner.png) no-repeat right;
+    background-size: 90% 85%;
+    width: 98%;
+    z-index: 1;
+}
+.banner-area{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+.banner-area h2{
+    color: #fff;
+    font-size: 50px;
+    font-family: "Rubik",;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.breadcrumb{
+    position: relative;
+    margin-left: 80px;
+}
+.breadcrumb-item a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
