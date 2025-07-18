@@ -42,7 +42,7 @@ body{
     height: 2px;
     position: absolute;
     top: 50%;
-    left: 23%;
+    left: auto;
     background: #000000;
 }
 .name{
@@ -425,13 +425,21 @@ body{
  /* For Medium Screens */
  @media (max-width: 767.98px) {
     .hero-heading::after{
-        width: auto;
+        width: 300px;
         left: auto;
     }
     .right-img, .about-us-img{
         display: none;
     }
+    .subs-form input{
+        margin-bottom: 10px;
+    }
  }
-
+ /* For Lg Screens */
+ @media (max-width: 991.98px) {
+    .right-img, .about-us-img{
+        display: none;
+    }
+ }
 
 
