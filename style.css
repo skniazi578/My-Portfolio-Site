@@ -274,6 +274,13 @@ body{
     color: rgb(119, 119, 119);
 }
 /* services end/ */
+/* Project start */
+.projects-section{
+    padding-bottom: 170px;
+}
+.project-imgs img{
+    
+}
 /* testimonial start */
 
 .testimonial-area{
