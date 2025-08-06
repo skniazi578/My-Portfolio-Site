@@ -444,6 +444,11 @@ body{
     .right-img, .about-us-img{
         display: none;
     }
+    .projects-space{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
  }
 
 
