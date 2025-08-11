@@ -59,7 +59,33 @@ body{
     text-transform: uppercase;
     font-family: "Rubik", sans-serif;
     font-weight: 600;
-    color: #000000;
+    color: #854fee;
+    text-wrap: nowrap;
+    overflow: hidden;
+    width: 30ch;
+    animation: typing 4s steps(100) 2 ;
+}
+@keyframes typing {
+    from {
+        width: 0ch;
+    }
+    to {
+        width: 30ch;
+    }
+}
+.right-img{
+    animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+        100% {
+            transform: translateY(0);
+        }
 }
 .hire-btn{
     color: white;
@@ -101,7 +127,7 @@ body{
 /* Hero End */
 /* About */
 
-.about-section{
+#about-section{
     padding: 200px  0px;
 }
 .main-title h1{
@@ -140,7 +166,7 @@ body{
 }
 
 /* Brand Section */
-.brand-section{
+#brand-section{
     padding-bottom:170px;
 }
 .single-brand-item {
@@ -222,7 +248,7 @@ body{
 /* Brand End */
 /* Services */
 
-.services-section{
+#services-section{
     padding-bottom: 170px;
 }
 .text-center{
@@ -275,12 +301,32 @@ body{
 }
 /* services end/ */
 /* Project start */
-.projects-section{
+#projects{
     padding-bottom: 170px;
 }
+.view-proj{
+    color: white;
+    background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 46px;
+    border-radius:5px ;
+    text-decoration: none;
+    box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3);
+    border: 2px solid transparent;
+    text-transform: uppercase; 
+}
+.view-proj:hover{
+    background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #4458dc, #854fee);
+    border: 2px solid #854fee;
+    color: #222222;
+    transition: all 0.4s ease-in;
+}
+/* Project end */
 /* testimonial start */
 
-.testimonial-area{
+#testimonial-area{
     padding-bottom: 170px;
 }
 .bg-color{
@@ -310,7 +356,7 @@ body{
 /* testimonial end/ */
 /* newsletter start */
 
-.newsletter-area{
+#newsletter-area{
     padding-bottom: 90px;
 }
 .newletter-box{
