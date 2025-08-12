@@ -53,18 +53,20 @@ body{
     font-weight: bold;
     color: #000000;
 }
-.skill{
+.skill {
     font-size: 24px;
     margin-bottom: 35px;
     text-transform: uppercase;
     font-family: "Rubik", sans-serif;
     font-weight: 600;
     color: #854fee;
-    text-wrap: nowrap;
+    white-space: nowrap; /* Correct syntax */
     overflow: hidden;
-    width: 30ch;
-    animation: typing 4s steps(100) 2 ;
+    border-right: 3px solid #854fee; /* Cursor */
+    width: 0ch; /* Start from 0 width */
+    animation: typing 4s steps(30) forwards, blink 0.7s step-end infinite;
 }
+
 @keyframes typing {
     from {
         width: 0ch;
@@ -73,6 +75,13 @@ body{
         width: 30ch;
     }
 }
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
 .right-img{
     animation: float 3s ease-in-out infinite;
     }
