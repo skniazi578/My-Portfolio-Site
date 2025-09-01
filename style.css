@@ -17,9 +17,32 @@ body{
 .active{
     color: #7C50EC !important;
 }
+/* Make header sticky */
+.header-area {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: white; /* Keep header visible */
+  box-shadow: none; /* Initially no shadow */
+  transition: all 0.3s ease;
+}
+
+/* Add shadow when scrolling */
+.header-area.sticky {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
 
 /* Header End/ */
 /* Hero-Section */
+.hero-section{
+    transition: all 1s ease;
+    opacity: 0;
+    transform: translateY(80px);
+}
+.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
 .bg-img{
     background-image: url('bg-logo.png'); 
     background-size: contain;

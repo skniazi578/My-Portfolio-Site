@@ -9,12 +9,15 @@
     </script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!-- https://themewagon.github.io/satner/index.html -->
 </head>
 <body>
 
     <!-- Header -->
-    <header class="header-area">
+    <header class="header-area" data-aos="fade-down">
       <div class="main-menu">
         <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
         <div class="container">
@@ -55,7 +58,7 @@
 <!-- Header End/ -->
 
     <!-- Hero Area -->
-<section class="hero-section">
+<section class="hero-section" data-aos="fade-up">
     <div class="container bg-img">
       <div class="row pt-5 me-3">
         <div class="col-lg-7 mt-5">
@@ -78,7 +81,7 @@
   <!-- End Hero Area -->
   <!-- Start About Area -->
 
-  <section id="about-section">
+  <section id="about-section" data-aos="fade-right">
     <div class="container">
       <div class="row d-flex ">
         <div class="col-lg-5">
@@ -96,7 +99,7 @@
     </div>
   </section>
   <!-- Brand Section -->
-  <section id="brand-section">
+  <section id="brand-section" data-aos="fade-right">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
@@ -189,7 +192,7 @@
 <!-- Brand Section End/ -->
  <!-- Services Section -->
 
-  <section id="services-section">
+  <section id="services-section" data-aos="zoom-in">
     <div class="container">
       <div class="row text-center">
         <div class="col-lg-12">
@@ -235,7 +238,7 @@
   </section>
  <!-- Services end/ -->
 <!-- Projects Section -->
-<section id="projects" class="py-5">
+<section id="projects" class="py-5" data-aos="fade-up">
   <div class="container">
     <div class="text-center mb-5">
       <h2 class="fw-bold">My Projects</h2>
@@ -293,7 +296,7 @@
 
 <!-- Projects Section End/ -->
  <!-- Testimonial start -->
-<section id="testimonial-area">
+<section id="testimonial-area" data-aos="flip-left">
   <div class="container">
     <div class="row text-center">
       <div class="col-lg-12">
@@ -330,7 +333,7 @@
 <!-- testimonial end/ -->
  <!-- news letter area -->
 
- <section id="newsletter-area">
+ <section id="newsletter-area" data-aos="fade-up">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -347,5 +350,13 @@
   </div>
  </section>
  <!-- newsletter end/ -->
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 </body>
 </html>
