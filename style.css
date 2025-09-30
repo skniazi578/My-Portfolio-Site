@@ -1,6 +1,7 @@
 body{
     background-image: url(about-bg.png);
     background-position: contain;
+    font-family: "Poppins", Arial, sans-serif;
 }
 /* Header */
 .logo{
@@ -82,10 +83,10 @@ body{
     text-transform: uppercase;
     font-family: "Rubik", sans-serif;
     font-weight: 600;
-    color: #854fee;
+    color: black;
     white-space: nowrap; /* Correct syntax */
     overflow: hidden;
-    border-right: 3px solid #854fee; /* Cursor */
+    border-right: 3px solid black; /* Cursor */
     width: 0ch; /* Start from 0 width */
     animation: typing 4s steps(30) forwards, blink 0.7s step-end infinite;
 }
@@ -160,7 +161,7 @@ body{
 /* About */
 
 #about-section{
-    padding: 200px  0px;
+    padding: 170px  0px;
 }
 .main-title h1{
     font-size: 36px;
@@ -196,7 +197,44 @@ body{
     color: #222222;
     transition: all 0.4s ease-in;
 }
+/* Resume Section */
+#resume-section{
+    padding-bottom:170px;
+}
+.resume-data{
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    background: rgb(249, 249, 253);
+    transition: all 0.7s ease 0s;
+}
+.resume-data:hover{
+    box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
+    background: #fff;
+}
+.resume-data .date{
+    font-weight: 900;
+    font-size: 26px;
+    color: #854fee;
+    text-align: start;
+}
+.degree-title{
+    font-size: 1.8rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.position{
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.resume-data p{
+    color: #777777;
+}
 
+
+/* Resume End */
 /* Brand Section */
 #brand-section{
     padding-bottom:170px;
@@ -386,61 +424,6 @@ body{
     color: #777777;
 }
 /* testimonial end/ */
-/* newsletter start */
-
-#newsletter-area{
-    padding-bottom: 90px;
-}
-.newletter-box{
-    background-image: url(newsletetr-bg.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 150px 0px;
-    text-align: center;
-}
-.newletter-box input{
-    min-width: 380px;
-    max-width: 380px;
-    line-height: 48px;
-    padding: 0 25px;
-    border: 1px solid #ffffff;
-    background: transparent;
-    font-weight: 400;
-    border-radius: 5px;
-    color: white;
-}
-.get-btn{
-    margin-left: 10px;
-    background: #ffffff;
-    text-transform: uppercase;
-    color: #222222;
-    border-radius: 5px;
-    line-height: 48px;
-    font-size: 14px;
-    font-family: "Rubik", sans-serif;
-    padding: 0px 38px;
-    cursor: pointer;
-}
-.newletter-box h1{
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #fff;
-    font-size: 30px;
-    font-family: "Rubik", sans-serif;
-    text-transform: uppercase;
-}
-.newletter-box p{
-    color: white;
-}
-.subs-form{
-    margin-top: 45px;
-}
-::placeholder{
-    color: white;
-    opacity: 1;
-}
-/* newsletter end */
-
 /* About Page */
 
 .banner-section{
@@ -473,6 +456,41 @@ body{
     text-decoration: none;
     color: white;
 }
+
+/* Footer */
+footer{
+    background-color: black;
+    padding: 5rem 0rem;
+    line-height: 1.8;
+}
+.title{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.footer-para{
+    color: #A8B3B3;
+}
+.footer-social ul li{
+    text-decoration: none;
+    list-style-type: none;
+    color: #A8B3B3;
+    border-radius: 50%;
+    background-color: #1A1A1A;
+    padding: 10px;
+    cursor: pointer;
+}
+.footer-links ul li{
+    list-style-type: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: #A8B3B3;
+}
+.i-color p{
+    color: #A8B3B3; 
+}
+    /* Footer End */
+
 
 /* Responsiveness */
 /* For Small Screens */
