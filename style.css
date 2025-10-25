@@ -372,7 +372,7 @@ body{
 /* services end/ */
 /* Project start */
 #projects{
-    padding-bottom: 170px;
+     padding-bottom: 170px;
 }
 .view-proj{
     color: white;
@@ -423,40 +423,73 @@ body{
     font-weight: 500;
     color: #777777;
 }
-/* testimonial end/ */
-/* About Page */
+/* testimonial end/ *
 
-.banner-section{
-    position: relative;
-    min-height: 485px;
-    background: url(common-banner.png) no-repeat right;
-    background-size: 90% 85%;
-    width: 98%;
-    z-index: 1;
-}
-.banner-area{
-    position: absolute;
-    top: 40%;
-    left: 40%;
-}
-.banner-area h2{
-    color: #fff;
-    font-size: 50px;
-    font-family: "Rubik",;
-    margin-left: 20px;
-    text-transform: uppercase;
-    font-weight: 700;
-}
 
-.breadcrumb{
-    position: relative;
-    margin-left: 80px;
+/* Contact */
+.contact-detail{
+    display: flex;
+    padding-bottom: 40px;
 }
-.breadcrumb-item a{
-    text-decoration: none;
+.contact-detail:hover .c-icon{
+    background-image: linear-gradient(#ffffff, #ffffff),
+    radial-gradient(circle at top left, #4458dc, #854fee);
+    border: 2px solid #854fee;
+    color: #222222;
+    transition: all 0.3s ease-in;
+}
+.c-icon{
+    border-radius: 50%;
+    background-color: #1A1A1A;
+    padding: 10px;
     color: white;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+}
+.c-detail{
+    padding-left: 15px;
+}
+.c-detail a{
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(119, 119, 119);
+}
+.contact-form .form-control {
+    padding: 18px 25px; /* Generous padding for input fields */
+    border-radius: 5px; /* Consistent border-radius */
+    font-size: 16px;
+    color: #343f52; /* Text input color */
+    font-family: 'Rubik', sans-serif;
 }
 
+.contact-form .form-control::placeholder {
+    color: #63688e; /* Placeholder text color */
+    opacity: 0.8;
+}
+.contact-submit-btn {
+    color: white;
+    background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 46px;
+    border-radius:5px ;
+    text-decoration: none;
+    box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3);
+    border: 2px solid transparent;
+    text-transform: uppercase; 
+}
+
+.contact-submit-btn:hover {
+    background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #4458dc, #854fee);
+    border: 2px solid #854fee;
+    color: #222222;
+    transition: all 0.4s ease-in;
+}
+
+
+/* Contact end */
 /* Footer */
 footer{
     background-color: black;
@@ -468,19 +501,26 @@ footer{
     font-size: 1.5rem;
     font-weight: bold;
 }
+.details{
+    text-decoration: none;
+    color: #A8B3B3;
+}
 .footer-para{
     color: #A8B3B3;
 }
-.footer-social ul li{
+.footer-social ul li a{
     text-decoration: none;
     list-style-type: none;
     color: #A8B3B3;
     border-radius: 50%;
     background-color: #1A1A1A;
     padding: 10px;
-    cursor: pointer;
 }
 .footer-links ul li{
+    list-style-type: none;
+    color:#A8B3B3 ;
+}
+.footer-links ul li a{
     list-style-type: none;
     text-decoration: none;
     cursor: pointer;
